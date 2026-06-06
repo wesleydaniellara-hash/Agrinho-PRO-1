@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte Terra Viva - Agrinho 2026</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+    <div class="menu">
+        <div class="logo">🌿 Agro Forte, Terra Viva</div>
+        <div class="links">
+            <a href="#inicio">Inicio</a>
+            <a href="#problema">Problema</a>
+            <a href="#solucoes">Solucoes</a>
+            <a href="#simulador">Simulador</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#futuro">Futuro</a>
+            <a href="#reflexao">Reflexao</a>
+            <a href="#pesquisa">Pesquisa</a>
+            <a href="#sobre">Sobre</a>
+        </div>
+        <button id="btnDark">🌙</button>
+        <button id="btnMenu">☰</button>
+    </div>
+ 
+    <div id="menuMobile">
+        <a href="#inicio">Inicio</a>
+        <a href="#problema">Problema</a>
+        <a href="#solucoes">Solucoes</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#futuro">Futuro</a>
+        <a href="#reflexao">Reflexao</a>
+        <a href="#pesquisa">Pesquisa</a>
+        <a href="#sobre">Sobre</a>
+    </div>
+ 
+    <div id="inicio" class="hero">
+        <p class="badge">🌿 Agrinho 2026 - Ensino Medio</p>
+        <h1>Agro Forte, <span>Terra Viva</span></h1>
+        <p class="subtitulo">
+            Neste projeto tentei entender uma coisa que sempre me pareceu contraditoria: como o Brasil pode ser lider em producao de alimentos e ao mesmo tempo um dos paises com mais desmatamento do mundo.
+        </p>
+ 
+        <div class="numeros">
+            <div class="numero-card">
+                <h2>3°</h2>
+                <p>maior exportador agricola do mundo</p>
+            </div>
+            <div class="numero-card">
+                <h2>97%</h2>
+                <p>do desmatamento ligado ao agro convencional</p>
+            </div>
+        </div>
+ 
+        <div class="hero-botoes">
+            <a href="#problema" class="btn-verde">Ver o problema</a>
+            <a href="#quiz" class="btn-transparente">Fazer o quiz</a>
+        </div>
+    </div>
+ 
+    <div id="problema" class="secao cinza">
+        <div class="conteudo">
+            <p class="etiqueta">Parte 1 — O problema</p>
+            <h2>O paradoxo do agro brasileiro</h2>
+            <p class="descricao">
+                Quando comecei a pesquisar esse tema, a primeira coisa que me surpreendeu foi perceber que o problema nao e o agronegocio em si — e o modelo de expansao que ainda usa a derrubada de vegetacao nativa como atalho para crescer.
+            </p>
+ 
+            <div class="grade-cards">
+                <div class="card">
+                    <div class="icone">🌳</div>
+                    <h3>Desmatamento acelerado</h3>
+                    <p>Nos ultimos anos, grandes areas foram desmatadas no Brasil, a maioria ligada a expansao agropecuaria. Esse numero e bem maior do que eu imaginava antes de comecar a pesquisa. (MapBiomas, 2024)</p>
+                </div>
+                <div class="card">
+                    <div class="icone">🏜️</div>
+                    <h3>Cerrado em risco</h3>
+                    <p>Antes de começar o projeto eu achava que o principal problema ambiental do Brasil estava so na Amazonia. Descobrir que o Cerrado tambem sofre um desmatamento tao intenso foi uma das informacoes que mais me chamou atencao.</p>
+                </div>
+                <div class="card">
+                    <div class="icone">💧</div>
+                    <h3>Uso excessivo de agua</h3>
+                    <p>A irrigacao agricola consome uma parcela enorme da agua doce disponivel no Brasil. Isso me fez pensar diferente sobre o quanto a agricultura e a agua estao conectadas — algo que eu nunca tinha parado pra refletir.</p>
+                </div>
+                <div class="card">
+                    <div class="icone">🌡️</div>
+                    <h3>Gases de efeito estufa</h3>
+                    <p>Eu nao associava agricultura diretamente a mudancas climaticas antes deste trabalho. Mas o setor agropecuario contribui com uma parte significativa das emissoes de CO2 do pais — principalmente pelo desmatamento para abertura de pastagens.</p>
+                </div>
+            </div>
+ 
+            <div class="destaque-verde">
+                <h1>10M</h1>
+                <div>
+                    <h3>hectares desmatados entre 2019 e 2024</h3>
+                    <p>Quando vi esse numero, fiquei impressionado. E como se alguem tivesse destruido mais de 70 vezes a area inteira de Curitiba em apenas 6 anos.</p>
+                </div>
+            </div>
+ 
+            <h3 style="margin-top: 30px; margin-bottom: 10px;">Aprofunde o tema</h3>
+ 
+            <div class="pergunta" id="p1">
+                <button onclick="abrirPergunta('p1')">
+                    Por que o Cerrado e tao importante?
+                    <span id="icone-p1">+</span>
+                </button>
+                <div class="resposta" id="resp-p1">
+                    <p>Uma das coisas que aprendi e que o Cerrado e chamado de "berco das aguas" — ele abriga as nascentes de boa parte das principais bacias hidrograficas do Brasil, incluindo as que abastecem o Pantanal e o Rio Sao Francisco. Destruir o Cerrado e basicamente secar o pais por dentro.</p>
+                </div>
+            </div>
+ 
+            <div class="pergunta" id="p2">
+                <button onclick="abrirPergunta('p2')">
+                    Produzir mais exige desmatar?
+                    <span id="icone-p2">+</span>
+                </button>
+                <div class="resposta" id="resp-p2">
+                    <p>Nao. Os dados do MapBiomas mostram que a grande maioria dos imoveis rurais registrados nao desmata — mesmo produzindo bastante. Isso quebrou uma ideia que eu tinha de que crescer no campo significava necessariamente desmatar mais.</p>
+                </div>
+            </div>
+ 
+            <div class="pergunta" id="p3">
+                <button onclick="abrirPergunta('p3')">
+                    O que e o Matopiba?
+                    <span id="icone-p3">+</span>
+                </button>
+                <div class="resposta" id="resp-p3">
+                    <p>Nunca tinha ouvido falar no Matopiba antes deste projeto. E uma regiao que cobre partes do Maranhao, Tocantins, Piaui e Bahia — e e onde o avanço do agronegocio sobre o Cerrado esta mais concentrado nos ultimos anos.</p>
+                </div>
+            </div>
+ 
+            <p class="fonte">Fontes: MapBiomas RAD 2024 | INPE PRODES 2024 | ANA — Atlas de Irrigacao</p>
+        </div>
+    </div>
+ 
+    <div id="solucoes" class="secao">
+        <div class="conteudo">
+            <p class="etiqueta">Parte 2 — As solucoes</p>
+            <h2>O campo que ja mudou</h2>
+            <p class="descricao">
+                A parte que mais gostei de pesquisar foi essa. Eu esperava encontrar so problemas, mas acabei descobrindo que ja existem muitas solucoes sendo usadas por produtores reais — inclusive aqui no Parana.
+            </p>
+ 
+            <div class="grade-cards">
+                <div class="card card-borda-verde">
+                    <div class="icone">🌱</div>
+                    <h3>Plantio direto</h3>
+                    <p>Nunca tinha ouvido falar nessa tecnica antes. O plantio direto evita revolver o solo — o que preserva a vida microbiana, reduz erosao e ainda ajuda a reter carbono. O Brasil e um dos maiores usuarios no mundo.</p>
+                    <span class="tag">Embrapa — 2a maior area do mundo</span>
+                </div>
+                <div class="card card-borda-verde">
+                    <div class="icone">🌳</div>
+                    <h3>Agrofloresta (ILPF)</h3>
+                    <p>A ideia de integrar arvores, lavoura e animais na mesma area parecia complicada, mas e uma das praticas mais eficientes para recuperar solos que ja foram degradados.</p>
+                    <span class="tag">Recupera solo e capta carbono</span>
+                </div>
+                <div class="card card-borda-verde">
+                    <div class="icone">🛰️</div>
+                    <h3>Agricultura de precisao</h3>
+                    <p>GPS e sensores no campo parecia coisa de filme, mas ja e realidade. Essa tecnologia reduz o desperdicio de agua e insumos porque aplica so o necessario, no lugar certo, na hora certa.</p>
+                    <span class="tag">Reduz uso de insumos — Embrapa</span>
+                </div>
+                <div class="card card-borda-verde">
+                    <div class="icone">💧</div>
+                    <h3>Irrigacao inteligente</h3>
+                    <p>Sistemas de gotejamento com sensores entregam agua so quando a planta precisa. Para um estado como o Parana, onde secas estao ficando mais frequentes, isso faz diferenca real.</p>
+                    <span class="tag">Economia significativa de agua</span>
+                </div>
+                <div class="card card-borda-verde">
+                    <div class="icone">🔄</div>
+                    <h3>Rotacao de culturas</h3>
+                    <p>Alternar o que se planta em cada temporada quebra ciclos de pragas e deixa o solo mais fertil. E uma das praticas mais simples — e mais eficazes — que encontrei na pesquisa.</p>
+                    <span class="tag">Aumenta fertilidade natural</span>
+                </div>
+                <div class="card card-borda-verde">
+                    <div class="icone">🚜</div>
+                    <h3>Exemplo aqui no Parana</h3>
+                    <p>O Parana tem cooperativas como a Coamo e a C.Vale que mostram na pratica que produtividade e responsabilidade ambiental podem caminhar juntas. Isso me orgulhou bastante como paranaense.</p>
+                    <span class="tag">Cooperativismo e sustentabilidade</span>
+                </div>
+            </div>
+ 
+            <p class="fonte">Fontes: Embrapa | Federacao Brasileira de Plantio Direto | Ministerio da Agricultura</p>
+        </div>
+    </div>
+ 
+    <div id="simulador" class="secao cinza">
+        <div class="conteudo">
+            <p class="etiqueta">Ferramenta interativa</p>
+            <h2>Simulador de impacto</h2>
+            <p class="descricao">Criei esse simulador pra mostrar de forma pratica o que cada tecnica sustentavel pode fazer em 100 hectares. Escolha uma pratica e veja o resultado estimado.</p>
+ 
+            <div class="caixa-simulador">
+                <div class="sim-topo">
+                    <h3>Simulador de praticas sustentaveis</h3>
+                    <p>Propriedade simulada: 100 hectares de lavoura convencional</p>
+                </div>
+                <div class="sim-corpo">
+                    <p>Escolha a pratica que deseja adotar:</p>
+                    <div class="opcoes-sim">
+                        <div class="opcao-sim" onclick="selecionarPratica(this, 'plantio')">🌱 Plantio direto</div>
+                        <div class="opcao-sim" onclick="selecionarPratica(this, 'agro')">🌳 Agrofloresta</div>
+                        <div class="opcao-sim" onclick="selecionarPratica(this, 'precisao')">🛰️ Precisao</div>
+                        <div class="opcao-sim" onclick="selecionarPratica(this, 'irrigacao')">💧 Irrigacao</div>
+                        <div class="opcao-sim" onclick="selecionarPratica(this, 'bio')">🦠 Bioinsumos</div>
+                    </div>
+                    <button onclick="simular()" class="btn-verde" style="margin-top: 15px;">Simular impacto</button>
+ 
+                    <div id="resultado-sim" style="display: none; margin-top: 20px; background: #f5f0e8; padding: 15px; border-radius: 10px;">
+                        <h4 id="sim-titulo"></h4>
+                        <p id="sim-descricao" style="margin: 8px 0; font-size: 14px; color: #666;"></p>
+                        <div id="sim-impactos" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div id="quiz" class="secao">
+        <div class="conteudo">
+            <p class="etiqueta">Teste seus conhecimentos</p>
+            <h2>Quiz: voce conhece o agro sustentavel?</h2>
+            <p class="descricao">Montei esse quiz com perguntas que eu mesmo nao saberia responder antes de comecar o projeto. Tenta!</p>
+ 
+            <div class="caixa-quiz">
+                <div class="quiz-topo">
+                    <h3>Questao <span id="numero-questao">1</span> de 5</h3>
+                    <span id="placar">0 pontos</span>
+                </div>
+                <div style="height: 4px; background: rgba(255,255,255,0.2);">
+                    <div id="barra-progresso" style="height: 100%; background: #a8d08d; width: 20%; transition: width 0.4s;"></div>
+                </div>
+ 
+                <div id="quiz-ativo">
+                    <div style="padding: 25px 20px;">
+                        <p id="texto-pergunta" style="font-size: 15px; font-weight: 600; margin-bottom: 15px;"></p>
+                        <div id="lista-opcoes"></div>
+                        <div id="feedback-quiz" style="display: none; margin-top: 12px; padding: 10px 14px; border-radius: 8px; font-size: 13px;"></div>
+                    </div>
+                    <div style="padding: 12px 20px; border-top: 1px solid #eee; display: flex; justify-content: flex-end;">
+                        <button id="btn-proxima" onclick="proxima()" style="display: none; background: #3a7d44; color: white; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer;">Proxima →</button>
+                    </div>
+                </div>
+ 
+                <div id="resultado-quiz" style="display: none; padding: 30px 20px; text-align: center;">
+                    <h1 id="nota-final" style="font-size: 60px; color: #3a7d44;"></h1>
+                    <p style="color: #888; margin-bottom: 10px;">pontos de 5 possiveis</p>
+                    <p id="mensagem-final" style="font-size: 15px; margin-bottom: 20px;"></p>
+                    <button onclick="recomecar()" style="background: #3a7d44; color: white; border: none; padding: 10px 22px; border-radius: 20px; font-size: 14px; font-weight: 600; cursor: pointer;">Refazer o quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div id="futuro" class="secao cinza">
+        <div class="conteudo">
+            <p class="etiqueta">Parte 3 — O futuro</p>
+            <h2>O campo inteligente que esta chegando</h2>
+            <p class="descricao">Essa parte da pesquisa me surpreendeu bastante. Eu nao sabia que o agro brasileiro ja estava tao avancado tecnologicamente.</p>
+ 
+            <div class="linha-tempo">
+                <div class="item-tempo">
+                    <div class="ano">Hoje</div>
+                    <h3>Drones e monitoramento</h3>
+                    <p>Ja e realidade em muitas propriedades. Drones fazem o trabalho de dias em poucas horas, com mais precisao e menos desperdicio de produto.</p>
+                </div>
+                <div class="item-tempo">
+                    <div class="ano">Em curso</div>
+                    <h3>Inteligencia Artificial no campo</h3>
+                    <p>Sensores no solo e sistemas de IA estao ajudando agricultores a decidir quando irrigar, plantar ou aplicar defensivos — reduzindo custos e impacto ambiental ao mesmo tempo.</p>
+                </div>
+                <div class="item-tempo">
+                    <div class="ano">Proximos anos</div>
+                    <h3>Agricultura 5.0</h3>
+                    <p>A tendencia e que robotica e bioeconomia se unam. Um campo que produz alimentos e ao mesmo tempo presta servicos ambientais — algo que pareceria impossivel ha poucos anos.</p>
+                </div>
+                <div class="item-tempo">
+                    <div class="ano">Meta 2030</div>
+                    <h3>Desmatamento zero</h3>
+                    <p>Meta assumida pelo Brasil. Parece ambiciosa, mas os dados mostram que e possivel se as boas praticas se espalharem pelo setor.</p>
+                </div>
+            </div>
+ 
+            <div class="frase-final">
+                <p>"O futuro sustentavel nao e uma escolha entre produzir ou preservar — e a unica forma de garantir que possamos continuar fazendo os dois."</p>
+                <small>— Reflexao pessoal ao concluir este projeto</small>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- reflexao pessoal -->
+    <div id="reflexao" class="secao">
+        <div class="conteudo">
+            <p class="etiqueta">Reflexao pessoal</p>
+            <h2>O que aprendi com este projeto</h2>
+ 
+            <p style="font-size: 15px; color: #555; line-height: 1.9; margin-bottom: 18px;">
+                Quando comecei a pesquisar sobre o tema, eu imaginava que o agronegocio e a preservacao ambiental eram assuntos que sempre entravam em conflito. Porem, durante o desenvolvimento deste projeto, percebi que existem diversas tecnologias e praticas que ajudam a produzir mais sem causar tantos impactos ao meio ambiente.
+            </p>
+ 
+            <p style="font-size: 15px; color: #555; line-height: 1.9; margin-bottom: 18px;">
+                Um dos pontos que mais me chamou atencao foi descobrir que muitos produtores ja utilizam metodos sustentaveis no dia a dia — e que isso nao diminui a producao, pelo contrario. Isso mudou bastante a forma como eu enxergava o campo.
+            </p>
+ 
+            <p style="font-size: 15px; color: #555; line-height: 1.9; margin-bottom: 18px;">
+                Como estudante do Parana, considero importante discutir esse tema, ja que a agricultura faz parte da realidade do nosso estado. A gente ve isso no dia a dia — nas cooperativas, nas cidades do interior, na economia da regiao. Nao e um tema distante.
+            </p>
+ 
+            <p style="font-size: 15px; color: #555; line-height: 1.9;">
+                No final, o que ficou pra mim e que o problema nao e o agro — e como ele e feito. E que ja temos as ferramentas pra fazer diferente. O que falta e vontade politica e conscientizacao de quem ainda nao mudou.
+            </p>
+        </div>
+    </div>
+ 
+    <!-- como realizei a pesquisa -->
+    <div id="pesquisa" class="secao cinza">
+        <div class="conteudo">
+            <p class="etiqueta">Metodologia</p>
+            <h2>Como realizei a pesquisa</h2>
+ 
+            <p style="font-size: 15px; color: #555; line-height: 1.9; margin-bottom: 18px;">
+                Comecei pesquisando no Google sobre desmatamento e agronegocio, mas percebi rapido que precisava de fontes mais confiaveis. Ai fui direto para sites como Embrapa, MapBiomas e INPE — que tem dados oficiais e atualizados.
+            </p>
+ 
+            <p style="font-size: 15px; color: #555; line-height: 1.9; margin-bottom: 18px;">
+                Tambem usei inteligencia artificial como ferramenta de apoio pra organizar o conteudo e estruturar as ideias. Mas as escolhas de texto, os exemplos que escolhi destacar e as reflexoes pessoais foram minhas — revisei tudo e adaptei pro que eu realmente queria dizer.
+            </p>
+ 
+            <p style="font-size: 15px; color: #555; line-height: 1.9;">
+                Foi o projeto escolar que mais aprendi fazendo. Comecei sem saber quase nada sobre o tema e terminei com uma visao completamente diferente sobre o campo brasileiro.
+            </p>
+        </div>
+    </div>
+ 
+    <div id="sobre" class="secao verde-escuro">
+        <div class="conteudo" style="text-align: center;">
+            <p class="etiqueta" style="color: #a8d08d;">Sobre o projeto</p>
+            <h2 style="color: white;">Quem fez este site</h2>
+            <p style="color: rgba(255,255,255,0.7); max-width: 500px; margin: 0 auto 25px;">Projeto desenvolvido para o Concurso Agrinho 2026, categoria Ensino Medio.</p>
+ 
+            <div class="grade-sobre">
+                <div class="card-sobre">
+                    <strong>Autor</strong>
+                    <span>Wesley Daniel de Lara</span>
+                </div>
+                <div class="card-sobre">
+                    <strong>Escola</strong>
+                    <span>Colégio Estadual Elza Scherner Moro</span>
+                </div>
+                <div class="card-sobre">
+                    <strong>Turma</strong>
+                    <span>2° Ano D</span>
+                </div>
+                <div class="card-sobre">
+                    <strong>Concurso</strong>
+                    <span>Agrinho 2026</span>
+                </div>
+                <div class="card-sobre">
+                    <strong>Categoria</strong>
+                    <span>Ensino Medio</span>
+                </div>
+                <div class="card-sobre">
+                    <strong>Pesquisa</strong>
+                    <span>Selecao, organizacao e revisao do conteudo feitas pelo autor.</span>
+                </div>
+            </div>
+ 
+            <div class="referencias">
+                <h4>Referencias</h4>
+                <ul>
+                    <li>MapBiomas Alerta — RAD 2024. mapbiomas.org</li>
+                    <li>INPE — PRODES 2024. inpe.br</li>
+                    <li>Embrapa — Plantio Direto no Brasil. embrapa.br</li>
+                    <li>Ministerio da Agricultura — Plano ABC+</li>
+                    <li>AgTech Garage / CNA — Mercado AgTech Brasil 2025</li>
+                </ul>
+            </div>
+ 
+            <p style="font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 20px;">
+                Projeto desenvolvido com base em pesquisas em fontes oficiais. IA utilizada como ferramenta de apoio na organizacao do conteudo.
+            </p>
+        </div>
+    </div>
+ 
+    <div class="rodape">
+        <p>Agro Forte, <span>Terra Viva</span> — Agrinho 2026</p>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
